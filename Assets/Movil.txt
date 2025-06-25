@@ -1,0 +1,24 @@
+Juego estilo burrito bison:
+
+Cañón que lanza una lata.
+
+Objetos con los que va a rebotar.
+
+En cuanto mas lejos mas gatos alimentas, mas dinero ganas.
+
+Mejoras:
+	- Maxima potencia
+	- Maxima velocidad
+	- Friccion aérea
+	- Friccion suelo
+	- Mas enemigos
+	- Mas dinero
+	- Propulsores (aun no se si explosiones que te tiran arriba o un "jetpack")
+
+
+
+Para mas tarde:
+
+Diferentes estilos de gatos
+Diferentes cañones
+Añadir cofres
