@@ -13,7 +13,7 @@ Mejoras:
 	- Friccion suelo
 	- Mas enemigos
 	- Mas dinero
-	- Propulsores (aun no se si explosiones que te tiran arriba o un "jetpack")
+	- Propulsores
 
 
 

@@ -1,0 +1,15 @@
+Añadir creacion del cielo procedural
+
+Añadir "enemigos" (cosas en las que rebotar) 
+
+Aplicar fisicas de rebotar en enemigos y en el suelo
+
+Añadir sprites, animaciones.....
+
+Rellenar y programar el panel de mejoras
+
+Aplicar todas las mejoras correctamente
+
+Rellenar y programar el panel de ajustes
+
+
