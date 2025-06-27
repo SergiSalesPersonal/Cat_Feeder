@@ -58,6 +58,7 @@ public class MealBehavior : MonoBehaviour {
             }
             if (velocity <= 0) {
                 if (propellerLeft > 0) {
+                    propellerLeft--;
                     Propeller();
                     haVolado = false;
                 }
@@ -80,7 +81,6 @@ public class MealBehavior : MonoBehaviour {
 
     public IEnumerator WaitForScreenClick() {
         yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
-        print("SSSSS");
         rb.AddForce(new Vector2(0.5f, 1f) * (500 + 100 * Mathf.Pow(gameData.levPropeller, 2)));
         esperandoPropeller = false;
     }

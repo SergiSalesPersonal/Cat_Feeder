@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour {
+    FloorCreation floorCreation;
     #region VariablesMainMenu
     [SerializeField] GameObject settingsPanel;
     [SerializeField] GameObject upgradesPanel;
@@ -29,6 +30,8 @@ public class UIManager : MonoBehaviour {
         if (scene.name == "Game") {
             shootButton = GameObject.Find("ShootButton").GetComponent<Button>();
             resetButton = GameObject.Find("ResetButton").GetComponent<Button>();
+
+
 
             cannonBehavior = FindFirstObjectByType<CannonBehavior>();
 

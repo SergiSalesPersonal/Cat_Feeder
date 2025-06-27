@@ -11,5 +11,3 @@ Rellenar y programar el panel de mejoras
 Aplicar todas las mejoras correctamente
 
 Rellenar y programar el panel de ajustes
-
-

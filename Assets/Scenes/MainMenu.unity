@@ -535,6 +535,7 @@ GameObject:
   - component: {fileID: 392155400}
   - component: {fileID: 392155399}
   - component: {fileID: 392155401}
+  - component: {fileID: 392155402}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -603,6 +604,21 @@ MonoBehaviour:
   coinsText: {fileID: 0}
   shootButton: {fileID: 0}
   resetButton: {fileID: 0}
+--- !u!114 &392155402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392155398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6352fd8161d709b438c3bf06a7648162, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floorPrefab: {fileID: 0}
+  blockWidth: 20
+  meal: {fileID: 0}
 --- !u!1 &578038825
 GameObject:
   m_ObjectHideFlags: 0

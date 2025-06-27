@@ -1,22 +1,33 @@
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class FloorCreation : MonoBehaviour {
 
     #region Variables
     public GameObject floorPrefab;
-    public float blockWidth = 20f;
+    public float blockWidth;
     public Transform meal;
     public const float mealDistance = 40f;
-    private float nextBlockX = -15f;
+    private float nextBlockX;
 
     #endregion
-    void Start() {
-        floorPrefab = Resources.Load("Prefabs/Floor") as GameObject;
+    void OnEnable() {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
 
-        for (int i = 0; i < 3; i++) {
-            CreateBlock();
+    void OnDisable() {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
+        if (scene.name == "Game") {
+            floorPrefab = Resources.Load("Prefabs/Floor") as GameObject;
+            nextBlockX = -15f;
+            blockWidth = 20f;
+
+            for (int i = 0; i < 3; i++) {
+                CreateBlock();
+            }
         }
-
     }
 
     void Update() {
